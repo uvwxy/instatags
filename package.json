@@ -1,0 +1,67 @@
+{
+  "name": "insta-tags",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt": "^0.4.5",
+    "grunt-angular-templates": "^0.5.7",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^2.1.2",
+    "grunt-google-cdn": "^0.4.3",
+    "grunt-jscs": "^1.8.0",
+    "grunt-newer": "^1.1.0",
+    "grunt-ng-annotate": "^0.9.2",
+    "grunt-postcss": "^0.5.5",
+    "grunt-svgmin": "^2.0.0",
+    "grunt-usemin": "^3.0.0",
+    "grunt-wiredep": "^2.0.0",
+    "jasmine-core": "^2.5.2",
+    "jit-grunt": "^0.9.1",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.14",
+    "time-grunt": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "grunt && grunt serve"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  }
+}
+# insta tags
+
+in the directory `app-server` run:
+
+```
+npm install
+npm run start
+```
+
+then in the repo directory run:
+
+```
+npm install
+npm run start
+```
+
+open
+
+[http://localhost:8080](http://localhost:8080)
+
