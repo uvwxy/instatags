@@ -1,9 +1,20 @@
 # insta tags
 
-## Build & development
+in the directory `app-server` run:
 
-Run `grunt` for building and `grunt serve` for preview.
+```
+npm install
+npm run start
+```
 
-## Testing
+then in the repo directory run:
 
-Running `grunt test` will run the unit tests with karma.
+```
+bower install
+npm install
+npm run start
+```
+
+open
+
+[http://localhost:8080](http://localhost:8080)
