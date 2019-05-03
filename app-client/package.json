@@ -1,0 +1,41 @@
+{
+  "name": "insta-tags",
+  "private": true,
+  "devDependencies": {
+    "angular": "^1.4.14",
+    "angular-animate": "^1.4.14",
+    "angular-cookies": "^1.4.14",
+    "angular-resource": "^1.4.14",
+    "angular-route": "^1.4.14",
+    "angular-sanitize": "^1.4.14",
+    "angular-touch": "^1.4.14",
+    "bootstrap-sass": "^3.4.1",
+    "jasmine-core": "^2.5.2",
+    "jit-grunt": "^0.9.1",
+    "jquery": "^3.4.1",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "phantomjs-prebuilt": "^2.1.14",
+    "time-grunt": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "clean": "rm -rf ../app-server/static",
+    "create-dirs": "mkdir ../app-server/static ../app-server/static/styles ../app-server/static/js ../app-server/static/fonts",
+    "compile-styles": "compass compile",
+    "copy-styles": "cp stylesheets/main.css ../app-server/static/styles",
+    "copy-fonts": "cp -R node_modules/bootstrap-sass/assets/fonts/* ../app-server/static/fonts/",
+    "copy-static": "cp -R src/* ../app-server/static/",
+    "copy-scripts": "cp node_modules/bootstrap-sass/assets/javascripts/bootstrap.js node_modules/jquery/dist/jquery.js node_modules/angular/angular.js node_modules/angular-touch/angular-touch.js node_modules/angular-cookies/angular-cookies.js node_modules/angular-resource/angular-resource.js node_modules/angular-sanitize/angular-sanitize.js node_modules/angular-route/angular-route.js node_modules/angular-animate/angular-animate.js ../app-server/static/js/",
+    "build": "npm-run-all clean create-dirs compile-styles copy-styles copy-fonts copy-scripts copy-static",
+    "start": "grunt && grunt serve"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  }
+}

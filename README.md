@@ -1,20 +1,19 @@
 # insta tags
 
-in the directory `app-server` run:
+in the directory `app-client` run:
 
 ```
 npm install
-npm run start
+npm run build
 ```
 
-then in the repo directory run:
+then in the `app-server` directory run:
 
 ```
-bower install
 npm install
 npm run start
 ```
 
 open
 
-[http://localhost:8080](http://localhost:8080)
+[http://localhost:3333](http://localhost:3333)
